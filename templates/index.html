@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+    <title>MailServer</title>
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/cover.css' %}" rel="stylesheet">
+</head>
+<body class="d-flex h-100 text-center text-bg-dark">  
+	<div class="container">
+	<header class="mb-auto">	
+	</header>
+  <main class="px-3">
+	<div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+	<ul>
+	<li>
+	{% block content %}
+	{% endblock %}
+	</li>
+	</ul>       
+      </div>
+    </div>
+  </main>
+  <footer class="mt-auto text-white-50">
+    <p>Для связи<a href="Ссылка" class="text-white"></a>, by <a href="<ссылка>" class="text-white">Контакты</a>.</p>
+  </footer>
+	</div>
+  </body>
+  </html>
+
+
+
+

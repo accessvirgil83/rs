@@ -1,0 +1,9 @@
+{% load static %}
+
+{% block content %}
+{% for i in object_list %}
+<h2>{{ i.title }}</h2>
+<h2>{{ i.address }}</h2>
+<h2>{{ i.bodyM }}</h2>
+{% endfor %}
+{% endblock %}
